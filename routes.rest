@@ -1,0 +1,36 @@
+GET http://localhost:3000/subscribers
+
+###
+GET http://localhost:3000/subscribers/64069a36ebb38c4284a40792
+
+###
+Post http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name":"Amazing person",
+    "subscribedToChannel": "webdevSimplified"
+}
+
+###
+DELETE http://localhost:3000/subscribers/6405798b1f05b23aa0f0cf54
+
+
+###
+PATCH http://localhost:3000/subscribers/64069a36ebb38c4284a40792
+Content-Type: application/json
+
+{
+    "name":"ycui",
+    "subscribedToChannel":"myChannel"
+}
+
+### header和body之间必须有一行空行
+
+PATCH   http://localhost:3000/subscribers/64069a36ebb38c4284a40792
+Content-Type: application/json
+
+{
+    "name":"ycui",
+    "subscribedToChannel":"myChannel"
+}
