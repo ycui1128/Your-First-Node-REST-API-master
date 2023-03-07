@@ -7,6 +7,6 @@ npm install
 npm run devstart
 ```
 
-所需插件
+所需vscode插件
 ```
-vscode insstall restAPI client
+restAPI client
